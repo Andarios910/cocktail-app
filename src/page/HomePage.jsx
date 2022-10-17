@@ -8,7 +8,8 @@ import axios from 'axios';
 
 export default function HomePage() {
     const [drinks, setDrinks] = useState([]);
-    const [query, setQuery] = useState('');
+    // const [query, setQuery] = useState('');
+    const query = ''
 
     const loadDrinks = async () => {
         try {

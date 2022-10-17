@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
 import Navbar from '../component/Navbar'
-import Content from '../component/Content'
 
 export default function DetailPage() {
 
@@ -29,6 +28,7 @@ export default function DetailPage() {
     
     useEffect(() => {
         loadDrinks();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
@@ -39,7 +39,7 @@ export default function DetailPage() {
                     <div className="h-64 w-auto md:w-1/2">
                         {
                             drinks.map(item => (
-                                <img className="img-detail h-full w-full lg:mt-8 lg:ml-8 my-auto object-center items-center" src={item.strDrinkThumb} key={item.idDrink} />
+                                <img className="img-detail h-full w-full lg:mt-8 lg:ml-8 my-auto object-center items-center" src={item.strDrinkThumb} key={item.idDrink} alt='drinks' />
                             ))
                         }
                     </div>
