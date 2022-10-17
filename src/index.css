@@ -1,13 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&family=Roboto+Condensed&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Quicksand', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Container */
+.container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.container__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url('../src/utils/jumbotron.jpg');
+  background-size: cover;
+  height: 89vh;
+  padding-top: 14rem;
+}
+
+.jumbotron h2 {
+  font-size: 100px;
+}
+
+.content {
+  height: 100vh;
+  margin-top: 2.5rem;
+}
+
+.card-detail-app {
+  margin-top: 25px;
+}
+
+.card-detail {
+  height: 100%;
+}
+
+.img-detail {
+  display: block;
+}
+
+.detail {
+  margin-top: 8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-detail {
+    height: 100%;
+  }
 }
