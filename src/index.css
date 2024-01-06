@@ -16,6 +16,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 12rem;
+}
+
+.nav__com {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.nav__close,
+.nav__toggle {
+  display: none;
 }
 
 /* Jumbotron */
@@ -51,8 +63,97 @@ body {
   margin-top: 8rem;
 }
 
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
 @media screen and (max-width: 1024px) {
   .card-detail {
     height: 100%;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .content__container {
+    grid-template-columns: repeat(3, 218px);
+  }
+
+  .container__nav {
+    column-gap: 4rem;
+  }
+
+  .jumbotron {
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .container__nav {
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav__com {
+    display: grid;
+    gap: 1rem;
+    width: 200px;
+    background-color: rgb(255, 254, 254);
+    border: 2px solid rgb(212, 194, 194);
+    border-radius: 1rem;
+    margin-top: 15rem;
+    /* margin-left: -5rem; */
+    padding: 10px;
+  }
+
+  .nav__menu {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    right: 1.65rem;
+    top: 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    border-radius: 1px solid black;
+    background-color: white;
+  }
+
+  .nav__toggle {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  .show__menu {
+    display: none;
+  }
+
+  .nav__close,
+  .nav__toggle {
+    display: block;
+  }
+
+  .jumbotron {
+    padding-top: 10rem;
+    height: 60vh;
+  }
+
+  .jumbotron h2 {
+    font-size: 64px;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  
+}
+

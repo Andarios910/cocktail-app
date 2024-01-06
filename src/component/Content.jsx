@@ -9,7 +9,7 @@ export default function Content( { drinks, onChange, onClick } ) {
 
     return (
         <div className='container content'>
-            <div className="grid grid-cols-4 gap-7">
+            <div className="grid grid-cols-4 gap-7 content__container">
                 {
                     drinks &&
                     drinks.map(item => (
