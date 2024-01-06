@@ -57,7 +57,7 @@ export default function Navbar() {
                     <div className='nav__menu flex'>
                         <button href="#" className="bg-gray-400 text-white px-3 py-2 rounded-md text-sm font-medium" onClick={() => navigate('/')} aria-current="page">Home</button>
 
-                        <Menu as="div" className="relative inline-block text-left">
+                        <Menu as="div" className="relative inline-block text-left lg:ml-2">
                             <div>
                                 <Menu.Button 
                                     onClick={handleClick} 
