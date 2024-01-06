@@ -15,7 +15,7 @@ export default function Navbar() {
     const [search, setSearch] = useState('');
     const handleClickTitle = () => navigate('/')
     const [category, setCategory] = useState([]);
-    const [toggle, showMenu] = useState(false);
+    const [toggle, showMenu] = useState(true);
 
     const handleChange = (e) => {
         setSearch(e.target.value);
