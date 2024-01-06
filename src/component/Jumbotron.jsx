@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Jumbotron() {
     return (
-        <div className="jumbotron text-center py-12 mt-16">
+        <div className="jumbotron text-center py-12 mt-16 header">
             <h2 className="jumbotron__text tracking-wide text-white sm:text-4xl sm:leading-10">
                 CocktailQ
             </h2>

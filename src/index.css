@@ -20,7 +20,7 @@ body {
 
 /* Jumbotron */
 .jumbotron {
-  background-image: url('../src/utils/jumbotron.jpg');
+  background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url('../src/utils/jumbotron.jpg');
   background-size: cover;
   height: 89vh;
   padding-top: 14rem;
