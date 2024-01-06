@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import Navbar from '../component/Navbar';
 import Content from '../component/Content';
+import GoToTop from '../component/GoToTop';
 
 export default function SearchPage() {
 
@@ -29,6 +30,7 @@ export default function SearchPage() {
             <Navbar />
             <h1 className='detail container text-xl'>Search : {s}</h1>
             <Content drinks={drinks} />
+            <GoToTop />
         </div>
     )
 }

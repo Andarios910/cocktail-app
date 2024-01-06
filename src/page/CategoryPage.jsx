@@ -4,6 +4,7 @@ import axios from 'axios'
 
 import Navbar from '../component/Navbar'
 import Content from '../component/Content'
+import GoToTop from '../component/GoToTop'
 
 export default function CategoryPage() {
     const { category } = useParams();
@@ -28,6 +29,7 @@ export default function CategoryPage() {
             <Navbar />
             <h1 className='detail container text-xl'>Category : {category}</h1>
             <Content drinks={drinks} />
+            <GoToTop />
         </div>
     )
 }

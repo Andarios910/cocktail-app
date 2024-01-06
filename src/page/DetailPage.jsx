@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
 import Navbar from '../component/Navbar'
+import GoToTop from '../component/GoToTop'
 
 export default function DetailPage() {
 
@@ -34,7 +35,7 @@ export default function DetailPage() {
     return (
         <div>
             <Navbar />
-            <div className="container card-detail-app w-100 lg:w-4/5 lg:mb-16 flex flex-col md:max-h-screen">
+            <div className="card-detail-app mt-24 w-100 lg:w-4/5 lg:mb-16 flex flex-col md:max-h-screen">
                 <div className="card-detail flex flex-col md:flex-row bg-white rounded-lg shadow-xl mt-4 w-100 mx-2 h-96 border-4">
                     <div className="h-64 w-auto md:w-1/2">
                         {
@@ -63,6 +64,7 @@ export default function DetailPage() {
                     </div>
                 </div>
             </div>
+            <GoToTop />
         </div>
     )
 }
